@@ -5,6 +5,7 @@ import { Container, Row, Col, Button } from "reactstrap";
 import {useState} from 'react';
 import {selectCampsiteById} from '../features/campsites/campSlice';
 import CampsitesList from "../features/campsites/CampsitesList";
+import SubHeader from '../components/SubHeader';
 
 const CampsiteDirectoryPage = () => {
   const [campsiteId, setCampsiteId] = useState(0)
@@ -12,6 +13,7 @@ const CampsiteDirectoryPage = () => {
 
   return (
     <Container>
+       <SubHeader current='Directory'/>
       <CampsitesList/>
     </Container>
   );
