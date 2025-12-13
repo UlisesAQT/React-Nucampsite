@@ -2,6 +2,9 @@ import {Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem} from 'reacts
 import NucampLogo from '../app/assets/img/logo.png';
 import {useState} from 'react';
 import { NavLink } from 'react-router-dom';
+import UserLoginForm from '../features/user/UserLoginForm'
+
+
 const Header = () =>{
   const [menuOpen, setMenuOpen] = useState(false);
     return(
@@ -13,6 +16,7 @@ const Header = () =>{
                 <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
                 <Collapse isOpen={menuOpen} navbar> 
                 <Nav className='ms-auto' navbar>
+                 <UserLoginForm/>
                     <NavItem> 
                       <NavLink className='nav-link' to='/'> <i className='fa fa-home fa-lg'></i>Home </NavLink> 
                     </NavItem>
