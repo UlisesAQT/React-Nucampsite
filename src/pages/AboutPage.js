@@ -11,7 +11,7 @@ const AboutPage = () =>{
                 <h3>Our Mission</h3>
                 <p>
                     We present a curated database of the best campsites in the
-                        vast woods and backcountry of the World Wide Web Wilderness.
+                        vast woods and back country of the World Wide Web Wilderness.
                         We increase access to adventure for the public while
                         promoting safe and respectful use of resources. The expert
                         wilderness trekkers on our staff personally verify each
@@ -65,7 +65,7 @@ const AboutPage = () =>{
             </Row>
             <Row className='row-content'>
                 <Col xs='12'>
-                    <h3> Community Partners</h3>
+                    <h3 className='text-center'> Community Partners</h3>
                 </Col>
                 <PartnersList />
             </Row>
