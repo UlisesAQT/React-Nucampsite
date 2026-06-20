@@ -2,6 +2,7 @@ import {Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
 
 
 const CampsiteDetail = ({ campsite }) => {
+    if(!campsite) return null;
     const { image, name, description } = campsite;
 
     return(
